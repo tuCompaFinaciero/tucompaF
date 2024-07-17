@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Compa Financiero</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <img src="resources/Escudo_FICCT.png" alt="Escudo FICCT" class="logo">
+        <img src="resources/logoPrincipal.png" alt="Tu Compa Financiero" class="logo">
+        <h2>Tu Compa Financiero</h2>
+        <ul>
+            <li><a href="#acercaDe">Acerca de</a></li>
+            <li><a href="#manual">Manual</a></li>
+            <li><a href="#matriz">Matriz de Fuentes y Uso</a></li>
+            <li><a href="#aActivo">Análisis de la Evolución de Activos</a></li>
+            <li><a href="#aPasivos">Análisis de Pasivos</a></li>
+            <li><a href="#aFuentes">Análisis de Fuentes y Uso</a></li>
+            <li><a href="#conclusiones">Conclusiones</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <section id="acercaDe" class="section">
+            <h2>Acerca de</h2>
+            <p>
+                Bienvenido a <strong>Tu Compa Financiero</strong>, la herramienta definitiva para emprendedores que desean realizar cálculos financieros de manera fácil y eficiente. Nuestra plataforma está diseñada para ayudarte a gestionar tus finanzas y tomar decisiones informadas para el crecimiento y éxito de tu negocio.
+            </p>
+            <p>
+                Con <strong>Tu Compa Financiero</strong>, podrás:
+            </p>
+            <ul>
+                <li>Analizar la evolución de tus activos y pasivos.</li>
+                <li>Evaluar tus fuentes y usos de fondos.</li>
+                <li>Visualizar datos financieros de diferentes gestiones.</li>
+                <li>Generar informes detallados y personalizados.</li>
+            </ul>
+            <p>
+                Nos dedicamos a simplificar el proceso financiero para que puedas concentrarte en lo que realmente importa: ¡hacer crecer tu emprendimiento! Explora nuestras secciones y descubre cómo podemos ser tu mejor aliado financiero.
+            </p>
+        </section>
+
+        <section id="manual" class="section">
+            <h2>Manual</h2>
+            <!-- Contenido del Manual -->
+            <h3>Matrices de Información</h3>
+            <p>Herramientas que organizan y presentan datos financieros de manera estructurada, facilitando el análisis y la toma de decisiones.</p>
+            <h3>Concepto de Stock</h3>
+            <p>La cantidad de bienes o recursos que una empresa posee en un momento determinado, incluidos materiales, productos terminados y existencias en proceso.</p>
+            <h3>Activo Fijo</h3>
+            <p>Bienes tangibles a largo plazo que una empresa utiliza en sus operaciones para generar ingresos, como maquinaria, edificios y terrenos.</p>
+            <h3>Activo Pasivo</h3>
+            <p>Término incorrecto; los activos y pasivos son categorías separadas en el balance general. Activos son bienes y derechos, mientras que pasivos son obligaciones y deudas.</p>
+            <h3>Caja y Banco</h3>
+            <p>Fondos líquidos disponibles de una empresa, incluidos el efectivo en caja y las cuentas bancarias.</p>
+            <h3>Patrimonio</h3>
+            <p>Valor residual de los activos de una empresa después de deducir todos sus pasivos. Representa la participación de los propietarios en la empresa.</p>
+            <h3>Deudas a Corto y Largo Plazo</h3>
+            <p>Obligaciones financieras de una empresa. A corto plazo son deudas que deben pagarse en menos de un año; a largo plazo, deudas con vencimiento superior a un año.</p>
+            <h3>Activos Circulantes</h3>
+            <p>Activos que se espera convertir en efectivo o consumir en el ciclo normal de operaciones de una empresa, generalmente en un año. Ejemplos: inventarios, cuentas por cobrar.</p>
+            <h3>Liquidez</h3>
+            <p>Capacidad de una empresa para cumplir con sus obligaciones financieras a corto plazo con los activos líquidos disponibles.</p>
+        </section>
+
+        <section id="matriz" class="section">
+            <h2>Matriz de Fuentes y Uso</h2>
+            <p>Para la realización del análisis, primeramente debemos saber a qué clasificación de empresa pertenece.</p>
+            <div id="clasificacionEmpresa">
+                <div class="dropdown">
+                    <button class="dropbtn">Seleccione el tipo de empresa al que pertenece:</button>
+                    <div class="dropdown-content">
+                        <a href="#" id="empresaServicios">Empresa de Servicios</a>
+                        <a href="#" id="empresaIndustrial">Empresa Industrial</a>
+                        <a href="#" id="empresaComercio">Empresa de Comercio</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="registroDatos">
+                <h3 id="tituloGestion">Gestión</h3>
+                <form id="formularioGestion">
+                <table>
+                    <tr>
+                        <th>Activos</th>
+                        <td>AF</td>
+                        <td>Stock</td>
+                        <td>Clientes</td>
+                        <td>C-B</td>
+                    </tr>
+                    <tr>
+                        <th>Cantidad</th>
+                        <td><input type="number" name="af" min="0" required id="af"></td>
+                        <td><input type="number" name="stock" min="0" required id="stock"></td>
+                        <td><input type="number" name="clientes" min="0" required id="cliente"></td>
+                        <td><input type="number" name="cb" min="0" required id="cb"></td>
+                    </tr>
+                    <tr>
+                        <th>Pasivos</th>
+                        <td>Patrimonio</td>
+                        <td>Descargo Largo Plazo</td>
+                        <td>Descargo Corto Plazo</td>
+                    </tr>
+                    <tr>
+                        <th>Cantidad</th>
+                        <td><input type="number" name="patrimonio" min="0" required id="patrimonio"></td>
+                        <td><input type="number" name="largo" min="0" required id="largo"></td>
+                        <td><input type="number" name="corto" min="0" required id="corto"></td>
+                    </tr>
+                </table>
+                <br>
+                <button type="submit" id="btnregistroGestion">Registrar Datos</button>
+                
+            </form>
+            </div>
+            <button type="submit" id="btnMostrarResultado">Mostrar Resultados</button>
+        </section>
+        
+        
+        <section id="aActivo" class="section">
+            <h2>Análisis de la Evolución de Activos</h2>
+            <table id="tablaActivos">
+                <tr>
+                    <th> Valores</th>
+                    <th>Gestión 1</th>
+                    <th>Gestión 2</th>
+                </tr>
+                <tr>
+                    <td>Activos Fijos (AF)</td>
+                    <td id="resultadAF1"></td> <!-- Datos de AF para Gestión 1 -->
+                    <td id="resultadAF2"></td> <!-- Datos de AF para Gestión 2 -->
+                </tr>
+                <tr>
+                    <td>Stock</td>
+                    <td id="resultadStock1"></td> <!-- Datos de Stock para Gestión 1 -->
+                    <td id="resultadStock2"></td> <!-- Datos de Stock para Gestión 2 -->
+                </tr>
+                <tr>
+                    <td>Clientes</td>
+                    <td id="resultadClientes1"></td> <!-- Datos de Clientes para Gestión 1 -->
+                    <td id="resultadClientes2"></td> <!-- Datos de Clientes para Gestión 2 -->
+                </tr>
+                <tr>
+                    <td>Capital y Beneficios (C-B)</td>
+                    <td id="resultadC-B1"></td> <!-- Datos de C-B para Gestión 1 -->
+                    <td id="resultadC-B2"></td> <!-- Datos de C-B para Gestión 2 -->
+                </tr>
+            </table>
+            
+            
+        </section>
+
+        <section id="aPasivos" class="section">
+            <h2>Análisis de Pasivos</h2>
+            <!-- Contenido del Análisis de Pasivos -->
+            <table id="tablaPasivos">
+                <tr>
+                    <th> Valores</th>
+                    <th>Gestión 1</th>
+                    <th>Gestión 2</th>
+                </tr>
+                <tr>
+                    <td>Patrimonio</td>
+                    <td id="resultadPatrimonio1"></td> <!-- Datos de AF para Gestión 1 -->
+                    <td id="resultadPatrimonio2"></td> <!-- Datos de AF para Gestión 2 -->
+                </tr>
+                <tr>
+                    <td>Deudas Largo plazo</td>
+                    <td id="resultadDeudasLargoPlazo1"></td> <!-- Datos de Stock para Gestión 1 -->
+                    <td id="resultadDeudasLargoPlazo2"></td> <!-- Datos de Stock para Gestión 2 -->
+                </tr>
+                <tr>
+                    <td>Deudas Corto plazo</td>
+                    <td id="resultadDeudasCortoPlazo1"></td> <!-- Datos de Clientes para Gestión 1 -->
+                    <td id="resultadDeudasCortoPlazo2"></td> <!-- Datos de Clientes para Gestión 2 -->
+                </tr>
+            </table>
+        </section>
+
+        <section id="aFuentes" class="section">
+            <h2>Análisis de Fuentes y Uso</h2>
+            <!-- Contenido del Análisis de Fuentes y Uso -->
+         <div id="tabla-container">
+    <!-- Primera tabla: Activos Fijos (AF), Clientes, Capital y Beneficios (C-B) -->
+    <table>
+        <caption>Tabla 1: Activos Fijos, Clientes, Capital y Beneficios (C-B)</caption>
+        <tr>
+            <th>Categoría</th>
+            <th>Datos</th>
+        </tr>
+        <tr>
+            <td>Activos Fijos (AF)</td>
+            <td id="poraf"></td>
+        </tr>
+        <tr>
+            <td>Clientes</td>
+            <td id="porclientes"></td>
+        </tr>
+        <tr>
+            <td>Capital y Beneficios (C-B)</td>
+            <td id="porcb"></td>
+        </tr>
+    </table>
+
+    <!-- Segunda tabla: Deuda a largo plazo, Deuda a corto plazo, Patrimonio, Stock -->
+    <table>
+        <caption>Tabla 2: Deuda a Largo Plazo, Deuda a Corto Plazo, Patrimonio, Stock</caption>
+        <tr>
+            <th>Categoría</th>
+            <th>Datos</th>
+        </tr>
+        <tr>
+            <td>Deuda a Largo Plazo</td>
+            <td id="pordeudaLargoPlazo"></td>
+        </tr>
+        <tr>
+            <td>Deuda a Corto Plazo</td>
+            <td id="pordeudaCortoPlazo"></td>
+        </tr>
+        <tr>
+            <td>Patrimonio</td>
+            <td id="porpatrimonio"></td>
+        </tr>
+        <tr>
+            <td>Stock</td>
+            <td id="porstock"></td>
+        </tr>
+    </table>
+</div>
+
+        </section>
+
+        <section id="conclusiones" class="section">
+            <h2>Conclusiones</h2>
+            <!-- Contenido de las Conclusiones -->
+            <table id="editableTable">
+                <tr>
+                    <th><abbr title="Descripción de Cuentas">Cuentas</abbr></th>
+                    <th><abbr title="Montos actuales">Montos Actual</abbr></th>
+                    <th><abbr title="Porcentaje">%</abbr></th>
+                    <th><abbr title="Montos para el próximo año">Montos Prox Año</abbr></th>
+                    <th><abbr title="Porcentaje">%</abbr></th>
+                    <th><abbr title="Aumentos en los montos">Aumentos</abbr></th>
+                    <th><abbr title="Disminuciones en los montos">Disminución</abbr></th>
+                    <th><abbr title="Usos de los fondos">Usos</abbr></th>
+                    <th><abbr title="Porcentaje">%</abbr></th>
+                    <th><abbr title="Fuentes de los fondos">Fuentes</abbr></th>
+                    <th><abbr title="Porcentaje">%</abbr></th>
+                </tr>
+                   
+                 <TR>
+                    <td><STRong>ACTIVOS</STRong></td>
+                 </TR>
+                <tr>
+                    <td class="tooltip" data-tooltip-id="tooltip1" data-placement="right" title="Un activo es un recurso con valor que alguien posee con la intención de que genere un beneficio futuro (sea económico o no).">AF</td>
+                    <td id="montoActualActivos"> </td>
+                    <td id="porcentajeActivos"></td>
+                    <td id="montoProxAnioActivos"></td>
+                    <td id="porcentajeProxAnioActivos"></td>
+                    <td id="aumentosActivos"></td>
+                    <td id="disminucionActivos"></td>
+                    <td id="usosActivos"></td>
+                    <td id="porcentajeUsosActivos"></td>
+                    <td id="fuentesActivos"></td>
+                    <td id="porcentajeFuentesActivos"></td>
+                </tr>
+                <tr>
+                    <td class="tooltip" data-tooltip-id="tooltip2" data-placement="right" title="Un stock es la totalidad de las mercancías que una empresa almacena en su inventario, incluyendo tanto las materias primas como los productos terminados.">Stock</td>
+                    <td id="montoActualStock"></td>
+                    <td id="porcentajeStock"></td>
+                    <td id="montoProxAnioStock"></td>
+                    <td id="porcentajeProxAnioStock"></td>
+                    <td id="aumentosStock"></td>
+                    <td id="disminucionStock"></td>
+                    <td id="usosStock"></td>
+                    <td id="porcentajeUsosStock"></td>
+                    <td id="fuentesStock"></td>
+                    <td id="porcentajeFuentesStock"></td>
+                </tr>
+                <tr>
+                    <td class="tooltip" data-tooltip-id="tooltip3" data-placement="right" title="Los clientes son las personas físicas o jurídicas que recibe un servicio o adquieren un bien a cambio de un dinero u otro tipo de retribución.">Clientes</td>
+                    <td id="montoActualClientes"></td>
+                    <td id="porcentajeClientes"></td>
+                    <td id="montoProxAnioClientes"></td>
+                    <td id="porcentajeProxAnioClientes"></td>
+                    <td id="aumentosClientes"></td>
+                    <td id="disminucionClientes"></td>
+                    <td id="usosClientes"></td>
+                    <td id="porcentajeUsosClientes"></td>
+                    <td id="fuentesClientes"></td>
+                    <td id="porcentajeFuentesClientes"></td>
+                </tr>
+                <td class="tooltip" data-tooltip-id="tooltip3" data-placement="right" title="xxxxxxx.">C-B</td>
+                <td id="montoActualCB"></td>
+                <td id="porcentajeCB"></td>
+                <td id="montoProxAnioCB"></td>
+                <td id="porcentajeProxAnioCB"></td>
+                <td id="aumentosClientesCB"></td>
+                <td id="disminucionClientesCB"></td>
+                <td id="usosClientesCB"></td>
+                <td id="porcentajeUsosClientesCB"></td>
+                <td id="fuentesClientesCB"></td>
+                <td id="porcentajeFuentesClientesCB"></td>
+                </tr>
+            </tr>
+            <td class="tooltip" data-tooltip-id="tooltip3" data-placement="right" title="xxxxxxx."><strong>Total Activo</strong></td>
+            <td id="montoActualActivo"></td>
+            <td id="porcentajeCB"></td>
+            <td id="montoProxAnioActivo"></td>
+            </tr>
+            <TR>
+                <td><STRong>PASIVOS </STRong></td>
+             </TR>
+        </tr>
+        <td class="tooltip" data-tooltip-id="tooltip3" data-placement="right" title="xxxxxxx.">Patrimonio</td>
+        <td id="montoActualPatrimonio"></td>
+        <td id="porcentajePatrimonio"></td>
+        <td id="montoProxAnioPatrimonio"></td>
+        <td id="porcentajeProxAnioPatrimonio"></td>
+        <td id="aumentosClientesPatrimonio"></td>
+        <td id="disminucionClientesPatrimonio"></td>
+        <td id="usosClientesPatrimonio"></td>
+        <td id="porcentajeUsosClientesPatrimonio"></td>
+        <td id="fuentesClientesPatrimonio"></td>
+        <td id="porcentajeFuentesClientesPatrimonio"></td>
+        </tr>
+    </tr>
+    <td class="tooltip" data-tooltip-id="tooltip3" data-placement="right" title="xxxxxxx.">D.Largo Plaso</td>
+    <td id="montoActualLargoPlazo"></td>
+    <td id="porcentajeLargoPlazo"></td>
+    <td id="montoProxAnioLargoPlazo"></td>
+    <td id="porcentajeProxAnioLargoPlazo"></td>
+    <td id="aumentosClientesLargoPlazo"></td>
+    <td id="disminucionClientesLargoPlazo"></td>
+    <td id="usosClientesLargoPlazo"></td>
+    <td id="porcentajeUsosClientesLargoPlazo"></td>
+    <td id="fuentesClientesLargoPlazo"></td>
+    <td id="porcentajeFuentesClientesLargoPlazo"></td>
+    </tr>
+    <td class="tooltip" data-tooltip-id="tooltip3" data-placement="right" title="xxxxxxx.">D.Corto Plaso</td>
+    <td id="montoActualCortoPlazo"></td>
+    <td id="porcentajeCortoPlazo"></td>
+    <td id="montoProxAnioCortoPlazo"></td>
+    <td id="porcentajeProxAnioCortoPlazo"></td>
+    <td id="aumentosClientesCortoPlazo"></td>
+    <td id="disminucionClientesCortoPlazo"></td>
+    <td id="usosClientesCortoPlazo"></td>
+    <td id="porcentajeUsosClientesCortoPlazo"></td>
+    <td id="fuentesClientesCortoPlazo"></td>
+    <td id="porcentajeFuentesClientesCortoPlazo"></td>
+    </tr>
+</tr>
+<td class="tooltip" data-tooltip-id="tooltip3" data-placement="right" title="xxxxxxx."> <strong>Total Pasivos</strong></td>
+<td id="montoActualPasivos"></td>
+<td id="porcentajeCB"></td>
+<td id="montoProxAnioPasivos"></td>
+<td></td>
+<td></td>
+<td></td>
+<td id="totalUsos"></td>
+<td></td>
+<td  id="totalFuentes"></td>
+<td></td>
+</tr>
+                <!-- Agrega más filas según sea necesario para otras cuentas -->
+            </table>
+            
+        </section>
+    </div>
+
+    <footer>
+        <div>
+            <h3>Contactos</h3>
+            <h4>Via WhatsApp</h4>
+            <img src="resources/logo1.png" alt="Logo WhatsApp" class="footer-logo">
+            <h4>(591) 75695707</h4>
+        </div>
+        <div>
+            <h4>Síguenos en nuestras redes sociales</h4>
+            <img src="resources/logo2.png" alt="Logo Facebook" class="footer-logo">
+            <h4>/TuCompaFinancieroBolivia</h4>
+        </div>
+    </footer>
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>

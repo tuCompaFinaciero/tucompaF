@@ -1,0 +1,11 @@
+el proyecto Tu compa Finacioero fue desarrollado unsa los siguientes lenguajes
+ 
+java script
+css
+html
+
+donde en html s encuentra las estructura que tiene el proyecto las etiquetas y todod lo que conlleva parN
+ la estructuracio  de un proyecto
+
+ CSS se encarga de brindarels dinerio y presentacio  ak sitio web, es la que mer permite cambiar el tamanio.
+y por ultimo java scrip es el que le da vida al proyecto ya que este me permite realizar los calculos las validaciones que tiene etv.
